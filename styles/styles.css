@@ -19,3 +19,83 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Shared Style Section */
+.btn-primary{
+    font-family: Quicksand;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 14px 52px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(254, 163, 1);
+}
+
+.btn-secondary{
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+}
+
+/* Header Style Section */
+#header-section{
+    color: rgb(247, 247, 247);
+}
+
+/* Nav Style Section */
+nav {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo-section > h1 {
+    font-family: Quicksand;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+
+nav>ul {
+    display: flex;
+    gap: 28px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: Quicksand;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li .nav-home {
+    color: rgb(254, 163, 1);
+}
+nav ul li .nav-about {
+    color: rgb(1, 172, 253);
+}
+nav ul li .nav-facilities{
+    color: rgb(5, 212, 223);
+}
+nav ul li .nav-admission {
+    color: rgb(93, 88, 239);
+}
+
