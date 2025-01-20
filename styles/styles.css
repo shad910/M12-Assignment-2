@@ -104,6 +104,7 @@ nav ul li .nav-admission {
 #banner-section{
     max-width: 1019px;
     margin: 0 auto;
+    margin-bottom: 52px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,5 +155,25 @@ nav ul li .nav-admission {
 @media screen and (max-width:576px) {
     .btn-primary{
         display: none;
+    }
+
+    .logo-section > h1{
+        display: none;
+    }
+
+    #banner-section{
+        flex-direction: column-reverse;
+    }
+
+    .banner-content{
+        text-align: center;
+    }
+
+    .banner-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .banner-description{
+        font-size: 14px;
     }
 }
