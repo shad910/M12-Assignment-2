@@ -34,6 +34,15 @@
     border-radius: 10px;
     color: rgb(255, 255, 255);
     background: rgb(254, 163, 1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    font-size: 1.019rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(254, 163, 1);
+    border: 1px solid rgb(254, 163, 1);
 }
 
 .btn-secondary {
@@ -45,7 +54,24 @@
     border-radius: 8px;
     color: rgb(255, 255, 255);
     background: rgb(17, 17, 17);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     white-space: nowrap
+   
+}
+
+.btn-secondary:hover {
+    font-size: 0.938rem;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    border: 1px solid rgb(17, 17, 17);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* Header-Style-Section */
@@ -70,11 +96,12 @@ nav {
     gap: 8px;
 }
 
-.logo-section h1 {
+.logo-section a > h1 {
     font-family: Quicksand;
     font-size: px;
     font-weight: 700;
     color: rgb(17, 17, 17);
+    cursor: pointer;
 }
 
 nav>ul {
@@ -109,6 +136,14 @@ nav ul li .nav-admission {
     color: rgb(93, 88, 239);
 }
 
+#check{
+    display: none;
+}
+
+#checkbox{
+    
+
+}
 
 /* Banner-Style-Section */
 #banner-section {
@@ -131,7 +166,7 @@ nav ul li .nav-admission {
     line-height: 53px;
     letter-spacing: 3px;
     color: rgb(17, 17, 17);
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .ban-tit-f {
@@ -148,7 +183,7 @@ nav ul li .nav-admission {
     font-weight: 400;
     line-height: 22px;
     color: rgb(17, 17, 17);
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .banner-image {
@@ -350,6 +385,7 @@ nav ul li .nav-admission {
     position: relative;
     top: -26px;
     left: 38px;
+    cursor: pointer;
 }
 
 .btn-sub-green {
@@ -377,6 +413,91 @@ nav ul li .nav-admission {
     display: flex;
     justify-content: center;
     margin-top: 70px;
+}
+
+/* Footer-Style-Section */
+footer {
+    background-color: rgb(1, 172, 253);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 108px 200px 140px 123px;
+}
+
+.footer .footer-row {
+    max-width: 400px;
+}
+
+.footer .foot-head-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.footer .foot-head-logo > h1 {
+    max-width: 200px;
+    font-family: Quicksand;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.footer-f-description {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-column ul > li {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.footer-column ul li > a {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.foot-about-school {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.social-touch {
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.footer-column a {
+    list-style: none;
+}
+
+.footer-column a > img {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.copyright-section {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.copyright-section p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
 /* Responsive Style Section */
@@ -425,14 +546,14 @@ nav ul li .nav-admission {
         max-width: 314px;
     }
 
-    .story-container{
+    .story-container {
         flex-direction: column;
         gap: 0;
         justify-content: center;
         align-items: center;
     }
 
-    .first-story-section{
+    .first-story-section {
         display: none;
     }
 
@@ -451,21 +572,27 @@ nav ul li .nav-admission {
         height: 108px;
     }
 
-    .more-stories-img img{
+    .more-stories-img img {
         border-radius: 14px 14px 0 0;
     }
 
-    .more-stories-description{
+    .more-stories-description {
         font-size: 9px;
         line-height: 14px;
     }
 
-    .btn-sub{
+    .btn-sub {
         font-size: 9px;
         padding: 6px;
         border: 24px;
         top: -15px;
         left: 25px;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 30px;
     }
 }
 
@@ -522,7 +649,7 @@ nav ul li .nav-admission {
         align-items: center;
     }
 
-    .first-story-section{
+    .first-story-section {
         display: none;
     }
 
@@ -530,6 +657,15 @@ nav ul li .nav-admission {
         gap: 16px;
     }
 
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 50px;
+    }
+
+    .footer-column a > img {
+        margin-bottom: 10px;
+    }
   
 }
 
