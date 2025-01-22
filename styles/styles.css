@@ -69,7 +69,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-a {
+a, .logo-section > a{
     cursor: pointer;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@ a {
 /* Nav-Style-Section */
 nav {
     padding: 20px 0 5px 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -105,7 +105,7 @@ nav {
     cursor: pointer;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -290,6 +290,32 @@ nav ul li .nav-admission {
 .read-more-three {
     color: rgb(135, 0, 255);
 }
+
+.next-pre-container {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.next-pre {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(254, 163, 1);
+    cursor: pointer;
+}
+
+.next-pre:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(254, 163, 1);
+    border: 1px solid rgb(254, 163, 1);
+}
+
 
 /* Our-Stories-Style-Section */
 #our-stories-section {
