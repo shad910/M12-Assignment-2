@@ -604,6 +604,10 @@ footer {
         max-width: 314px;
     }
 
+    .next-pre-container .next-pre {
+        display: none;
+    }
+
 
 /* Stoy-Style-Section */
     .story-container {
@@ -743,10 +747,6 @@ footer {
 
     .read-more-two {
         margin-top: 53px;
-    }
-
-    .next-pre-container .next-pre {
-        display: none;
     }
 
 
