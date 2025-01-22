@@ -147,6 +147,11 @@ nav ul li .nav-admission {
 
 }
 
+.line{
+    display: none;
+    border: 0.5px solid rgb(254, 163, 1);
+}
+
 
 /* Banner-Style-Section */
 #banner-section {
@@ -570,6 +575,9 @@ footer {
         transition: all 0.5s;
     }
 
+    .line{
+        display: block;
+    }
 
 /* Banner-Style-Section */
     #banner-section {
