@@ -69,7 +69,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
-a{
+a {
     cursor: pointer;
     text-decoration: none;
 }
@@ -82,11 +82,12 @@ a{
 
 /* Nav-Style-Section */
 nav {
-    padding: 20px 0 0 0;
+    padding: 20px 0 5px 0;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .logo-section {
@@ -98,7 +99,7 @@ nav {
 
 .logo-section a > h1 {
     font-family: Quicksand;
-    font-size: px;
+    font-size: 28px;
     font-weight: 700;
     color: rgb(17, 17, 17);
     cursor: pointer;
@@ -106,6 +107,8 @@ nav {
 
 nav>ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 28px;
 }
 
@@ -113,9 +116,9 @@ nav ul li {
     list-style: none;
 }
 
-nav ul li a, .logo-section h1 > a {
+nav ul li a {
     font-family: Quicksand;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 500;
     text-decoration: none;
 }
@@ -136,14 +139,14 @@ nav ul li .nav-admission {
     color: rgb(93, 88, 239);
 }
 
-#check{
+#checkbox {
     display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+
 }
 
-#checkbox{
-    
-
-}
 
 /* Banner-Style-Section */
 #banner-section {
@@ -423,6 +426,8 @@ footer {
 .footer {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    gap: 10px;
     padding: 108px 200px 140px 123px;
 }
 
@@ -434,7 +439,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 30px;
 }
 
@@ -447,6 +452,7 @@ footer {
 }
 
 .footer-f-description {
+    width: 300px;
     font-family: Quicksand;
     font-size: 20px;
     font-weight: 400;
@@ -496,7 +502,7 @@ footer {
 }
 
 .copyright-section p {
-    font-size: 16px;
+    font-size: 1.125rem;
     letter-spacing: 0.5px;
 }
 
@@ -504,18 +510,41 @@ footer {
 
 /* Responsive styling for small size device */
 @media screen and (max-width:576px) {
-    .btn-primary {
+    .btn-primary,
+     .logo-section a h1,
+        nav .p-btn-container a > button{
         display: none;
     }
 
-    .logo-section > h1 {
-        display: none;
+
+/* Nav-Style-Section */
+    #checkbox{
+        display: block;
     }
 
-    nav ul li a {
-        display: none;
+    nav ul{
+        background-color: rgb(247, 247, 247);;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+        overflow: hidden;
     }
 
+    nav ul li {
+        padding: 15px 20px 20px 20px;
+        
+    }
+
+    #menuList{
+        transition: all 0.5s;
+    }
+
+
+/* Banner-Style-Section */
     #banner-section {
         flex-direction: column-reverse;
         padding-bottom: 20px;
@@ -536,6 +565,8 @@ footer {
         line-height: 18px;
     }
 
+
+/* Curriculum-Style-Section */
     .curriculum-containner {
         display: flex;
         flex-direction: column;
@@ -546,6 +577,8 @@ footer {
         max-width: 314px;
     }
 
+
+/* Stoy-Style-Section */
     .story-container {
         flex-direction: column;
         gap: 0;
@@ -558,18 +591,18 @@ footer {
     }
 
     .more-story-section {
-        gap: 12px;
+        gap: 5px;
     }
 
     .more-story-container {
-        width: 173px;
-        height: 215px;
+        width: 160px;
+        height: 210px;
         border-radius: 14px;
     }
 
     .more-stories-img {
-        width: 173px;
-        height: 108px;
+        width: 160px;
+        height: 90px;
     }
 
     .more-stories-img img {
@@ -577,7 +610,7 @@ footer {
     }
 
     .more-stories-description {
-        font-size: 9px;
+        font-size: 12px;
         line-height: 14px;
     }
 
@@ -589,15 +622,56 @@ footer {
         left: 25px;
     }
 
+
+/* Footer-Style-Section */
     .footer{
         flex-direction: column;
         gap: 30px;
-        padding-left: 30px;
+        max-width: 390px;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+
+
+    .copyright-section p {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
     }
 }
 
 /* Responsive styling for medium size device */
 @media screen and (min-width:576px) and (max-width:768px){
+   
+/* Shared-Style-Section */
+    .btn-primary {
+        font-family: Quicksand;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 14px 30px;
+    }
+    
+    .btn-primary:hover {
+        font-size: 0.844rem;
+        background-color: rgb(255, 255, 255);
+        color: rgb(254, 163, 1);
+        border: 1px solid rgb(254, 163, 1);
+    }
+
+
+/* Nav-Style-Section */
+    .logo-section a > h1 {
+        font-size: 22px;
+    }    
+
+    nav ul li a {
+        font-family: Quicksand;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+/* Banner-Style-Section */
     #banner-section {
         flex-direction: column-reverse;
         gap: 35px;
@@ -618,6 +692,8 @@ footer {
         line-height: 18px;
     }
 
+
+/* Curriculum-Style-Section */
     .curriculum-containner {
         margin-left: 15px;
         margin-right: 15px;
@@ -642,6 +718,8 @@ footer {
         margin-top: 53px;
     }
 
+
+/* Story-Style-Section */
     .story-container{
         flex-direction: column;
         gap: 0;
@@ -657,20 +735,29 @@ footer {
         gap: 16px;
     }
 
+
+/* Footer-Style-Section */
     .footer {
         padding-left: 30px;
         padding-right: 30px;
         gap: 50px;
     }
 
+    .social-touch{
+        margin-bottom: 22px;
+    }
+
     .footer-column a > img {
-        margin-bottom: 10px;
+        margin-bottom: 3px;
+        margin-left: 15px;
     }
   
 }
 
 
 @media screen and (min-width:768px) and (max-width:992px){
+ 
+/* Story-Style-Section */
     .first-story-section{
         display: none;
     }

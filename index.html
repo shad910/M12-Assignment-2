@@ -9,28 +9,31 @@
     <title>Kids School</title>
 </head>
 <body>
+<!-- Header-Section -->
     <header id="header-section">
+
+<!-- Nav-Section -->
         <nav>
             <div class="logo-section">
                 <img src="./assets/icons/logo.png" alt="LoGO">
                 <a href="index.html"><h1>SCHOOL</h1></a>
             </div>
-            <ul>
+            <ul id="menuList">
                 <li><a href="#" class="nav-home">Home</a></li>
                 <li><a href="#" class="nav-about">About</a></li>
                 <li><a href="#" class="nav-facilities">Facilities</a></li>
                 <li><a href="#" class="nav-admission">Admission</a></li>
             </ul>
-            <div>
+            <div class="p-btn-container">
                 <a href="#"><button class="btn-primary">Contact</button></a>
             </div>
             
-            <input type="checkbox" name="" id="check">
             <label for="check" id="checkbox">
-                <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </label>
         </nav>
 
+<!-- Banner-Section -->
         <section id="banner-section">
             <div class="banner-content">
                 <p class="banner-title">
@@ -54,8 +57,11 @@
             </div>
         </section>
     </header>
-    
+
+<!-- Main-Section -->
     <main class="main-bg-img">
+
+<!-- Standard-Curriculum-Section -->
         <section id="standard-curriculum-section">
             <h2>Standard Curriculum</h2>
             <div class="curriculum-containner">
@@ -95,6 +101,7 @@
             </div>
         </section>
 
+<!-- Our-Stories-Section -->
         <section id="our-stories-section">
             <h2>Our Stories</h2>
             <div class="story-container">
@@ -179,6 +186,7 @@
         </section>
     </main>
 
+<!-- Footer-Section -->
     <footer>
         <div class="footer">
             <div class="footer-row">
@@ -209,12 +217,33 @@
                 <a href="#"><img src="./assets/icons/dribble.png" alt="Dribble"></a>
             </div>
         </div>
+
+<!-- Copyright-Section -->
         <div class="copyright-section">
             <p>
-                &copy; 2025 Kids
+                <small>
+                    &copy; 2025 Kids
                 Education. All rights reserved.
+                </small>
             </p>
         </div>
     </footer>
+
+<!-- JavaScript for the Hamburger Menu -->
+    <script>
+        let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    </script>
+
 </body>
 </html>
