@@ -745,6 +745,10 @@ footer {
         margin-top: 53px;
     }
 
+    .next-pre-container .next-pre{
+        display: none;
+    }
+
 
 /* Story-Style-Section */
     .story-container{
