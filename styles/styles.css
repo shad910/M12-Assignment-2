@@ -286,6 +286,7 @@ nav ul li .nav-admission {
     text-align: center;
     color: rgb(100, 200, 255);
     margin-top: 33px;
+    cursor: pointer;
 }
 
 .read-more-two {
@@ -481,6 +482,11 @@ footer {
     font-size: 42px;
     font-weight: 700;
     color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.footer .foot-head-logo > img {
+    cursor: pointer;
 }
 
 .footer-f-description {
@@ -523,8 +529,8 @@ footer {
 }
 
 .footer-column a > img {
-    cursor: pointer;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .copyright-section {
@@ -617,7 +623,7 @@ footer {
     }
 
 
-/* Stoy-Style-Section */
+/* Story-Style-Section */
     .story-container {
         flex-direction: column;
         gap: 0;
